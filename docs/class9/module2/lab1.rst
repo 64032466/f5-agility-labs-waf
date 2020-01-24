@@ -1,7 +1,7 @@
 Lab – Use the OWASP Compliance Dashboard
 ----------------------------------------
 
-description here
+description here lots more coming... and even more coming...
 
 Task – something here
 ~~~~~~~~~~~~~~~~~~~~~
