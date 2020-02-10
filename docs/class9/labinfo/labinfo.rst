@@ -12,13 +12,18 @@ you are using for connection instructions.
 Environment
 -----------
 
-Ubuntu Jump Server:
+External Jump Server:
 
 * Web Attack Tools: 
 
  * `nikto <https://github.com/sullo/nikto>`_ - Nikto web server scanner
  * `nmap/nping <https://nmap.org/>`_ - Network mapper
 
+Internal LAMP Server:
+
+* Docker Containers
+
+ * Juice Shop - Extremely Vulnerable Web Application
 
 Lab Topology
 ------------
