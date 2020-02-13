@@ -11,6 +11,7 @@ This class covers the following topics:
 - Explore the BIG-IP OWASP compliance dashboard
 - IP OWASP Top 10 Dashboard to mitigate OWASP Top 10 attacks
 - Leverage F5 WAF Tester to assess vulnerabilities in an existing web application
+- thi is bogus
 
 Expected time to complete: **2 hours**
 
