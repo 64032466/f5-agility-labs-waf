@@ -1,40 +1,58 @@
-Lab – Explore the Security Screens
+Exercise 1.1: Policy Creation
 ----------------------------------
+Objective
+~~~~~~~~~
 
-This lab will guide you through the Security screens using the BIG-IP web interface, TMUI .
+- Create a transparent policy using the guided configuration utiliy
 
-Task – Open a Web Browser
-~~~~~~~~~~~~~~~~~~~~~~~~~
+- Apply the security policy to an existing virtual server
 
-.. NOTE:: An account is required to download software.  You can create one at
-   https://login.f5.com/resource/registerEmail.jsp
+- Do an intial review of the OWASP dashboard, and apply some simple signature based protection via the dahboard
 
-Follow these steps to complete this task:
+- 
 
-#. Open your web browser
-#. Navigate to https://downloads.f5.com
-#. Login with your username and password.
-#. After logging in you should see the following window:
+- Estimated time for completion: **15** **minutes**.
 
-   |image1|
+Please ensure that four virtual servers are configured before you begin:
 
-Task – Download the Image
-~~~~~~~~~~~~~~~~~~~~~~~~~
+- ``Juice_Shop_VS``
 
-In this task we will download the |f5| |bip| |ve| image to your system
+Create security policy using the Guided Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Follow these steps to complete this task:
+#. On the Main tab, click **Security > Guided Configuration**. This opens the Guided Configuration screen
 
-#. Click the 'Find a Download' button.
+#. Click on the **Polices List**
 
-   .. image:: /_static/class9/image002.png
+.. image:: /_static/class9/webappbutton.png
+  :width: 600 px
 
-#. Click the link that contains the |bip| TMOS software version you would like
-   to download.
+#. Click on the **Web Application Protection** template button.
 
-   .. IMPORTANT:: Be sure to click a link that has "\ |ve|" in the name
+.. image:: /_static/class9/webapptemplate.png
+  :width: 600 px
 
-#. Find the image appropriate for your hypervisor
-#. Download the image and save it to you local system
+#. The guided configuration now gives you a configuration example of the tempalte style you are looking to deploy and a list of the objects it will guide you throuhgh the creation of.  Click the  **Next** button.
 
-.. |image1| image:: /_static/class9/image001.png
+#. Give your configuration the name ``juice_shop_waf`` this will also name your security policy.
+
+#. Click on **Show Advanced Settings** button in the upper right hand corner of your page.
+
+.. image:: /_static/class9/advanced.png
+  :width: 600 px
+
+#. Under **Server Technologies** add the following to the **selected** window.  Adding these technologies will assist in building a more precise policy.
+    - Express.js
+    - JavaScript
+    - JQuery
+    - Node.js
+
+    .. Note:: We are adding these technologies since we know what the application is using.  There is also a feature that can be turned on that can allow the policy to learn these technologies.
+
+#. On the next place a check next to **Assign Policy to Virtual Server**, under **Virtual Server** choose **Use Existing**, and move the Juice_Shop_VS to the selected window.  Press **Save & Next**
+
+.. image:: /_static/class9/addvs.png
+  :width: 600 px
+
+  #. The next page will summarize the objects and policy configuration.  Review, and take notice that you can also go back and edit.  When done click **Deploy** at the bottom of the screen.. It will take a few moments to complete the policy build.
+
