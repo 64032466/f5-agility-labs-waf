@@ -39,7 +39,7 @@ Create security policy using the Guided Configuration
 .. image:: /_static/class9/advanced.png
   :width: 600 px
 
-#. Under **Server Technologies** add the following to the **selected** window.  Adding these technologies will assist in building a more precise policy.
+#. Under **Server Technologies** add the following to the selected window.  Adding these technologies will assist in building a more precise policy.
     - Express.js
     - JavaScript
     - JQuery
