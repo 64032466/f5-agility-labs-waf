@@ -9,8 +9,6 @@ Objective
 
 - Do an intial review of the OWASP dashboard, and apply some simple signature based protection via the dahboard
 
-- 
-
 - Estimated time for completion: **15** **minutes**.
 
 Please ensure that four virtual servers are configured before you begin:
