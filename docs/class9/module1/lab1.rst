@@ -1,7 +1,7 @@
-Exercise 1.1: Policy Creation
-----------------------------------
+Exercise 1.1: Use the Guided Configuration to Build a WAF Policy
+------------------------------------------------------------------------
 Objective
-~~~~~~~~~
+~~~~~~~~~~~~~~~~`
 
 - Create a transparent policy using the guided configuration utiliy
 
@@ -16,7 +16,7 @@ Please ensure that four virtual servers are configured before you begin:
 - ``Juice_Shop_VS``
 
 Create security policy using the Guided Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. On the Main tab, click **Security > Guided Configuration**. This opens the Guided Configuration screen
 
@@ -49,7 +49,7 @@ Create security policy using the Guided Configuration
 
 #. On the next place a check next to **Assign Policy to Virtual Server**, under **Virtual Server** choose **Use Existing**, and move the Juice_Shop_VS to the selected window.  Press **Save & Next**
 
-.. image:: /_static/class9/addvs1.png
+.. image:: /_static/class9/addvs.png
   :width: 600 px
 
   #. The next page will summarize the objects and policy configuration.  Review, and take notice that you can also go back and edit.  When done click **Deploy** at the bottom of the screen.. It will take a few moments to complete the policy build.
