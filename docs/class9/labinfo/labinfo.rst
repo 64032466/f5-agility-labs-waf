@@ -6,26 +6,25 @@ Lab Environment & Topology
 Environment
 -----------
 
-External Jump Server:
+**External Jump Server**
 
-* Web Attack Tools: 
+Website Attack Tools:
 
- * `nikto <https://github.com/sullo/nikto>`_ - Nikto web server scanner
- * `nmap/nping <https://nmap.org/>`_ - Network mapper
+* `nikto <https://github.com/sullo/nikto>`_ - Nikto web server scanner
+* `nmap/nping <https://nmap.org/>`_ - Network mapper
 
-Internal LAMP Server:
+**Internal LAMP Server**
 
-* Docker Containers
+Docker Containers:
 
- * Juice Shop - Extremely Vulnerable Web Application
+* Juice Shop - Extremely Vulnerable Web Application
 
-F5 BIG-IP version 15.1
+F5 BIG-IP Details
 
-* Licensed Modules
-
- * Best Bundle (LTM, AFM, APM, ASM)
- * Advanced WAF add-on
- * IP Intelligence
+* version 15.1
+* Best Bundle (LTM, AFM, APM, ASM)
+* Advanced WAF add-on
+* IP Intelligence
 
 Lab Topology
 ------------
@@ -39,4 +38,4 @@ components have been included in your lab environment:
 
 A network diagram of the lab:
 
-	|lab-diag|
+|lab-diag|

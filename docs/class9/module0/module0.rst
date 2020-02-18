@@ -1,5 +1,5 @@
-Module – Create a BIG-IP Advanced WAF Policy to Protect the Juice Shop
-======================================================================
+Module – Intro and Hacking the Juice Shop Web Application
+=========================================================
 
 In this module you will learn how to create a WAF policy using the Guided Configuration utility.
 
