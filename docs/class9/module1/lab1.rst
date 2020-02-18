@@ -1,7 +1,7 @@
 Exercise 1.1: Use the Guided Configuration to Build a WAF Policy
 ------------------------------------------------------------------------
 Objective
-~~~~~~~~~~~~~~~~`
+~~~~~~~~~~~~~~~~
 
 - Create a transparent policy using the guided configuration utiliy
 
@@ -36,7 +36,7 @@ Create security policy using the Guided Configuration
 
 #. Click on **Show Advanced Settings** button in the upper right hand corner of your page.
 
-.. image:: /_static/class9/advanced.png
+  .. image:: /_static/class9/advanced.png
   :width: 600 px
 
 #. Under **Server Technologies** add the following to the selected window.  Adding these technologies will assist in building a more precise policy.
@@ -52,5 +52,5 @@ Create security policy using the Guided Configuration
 .. image:: /_static/class9/addvs.png
   :width: 600 px
 
-  #. The next page will summarize the objects and policy configuration.  Review, and take notice that you can also go back and edit.  When done click **Deploy** at the bottom of the screen.. It will take a few moments to complete the policy build.
+#. The next page will summarize the objects and policy configuration.  Review, and take notice that you can also go back and edit.  When done click **Deploy** at the bottom of the screen.. It will take a few moments to complete the policy build.
 
