@@ -1,4 +1,4 @@
-Exercise 1.1: Use the Guided Configuration to Build a WAF Policy
+Lab 1 - Use the Guided Configuration to Build a WAF Policy
 ------------------------------------------------------------------------
 Objective
 ~~~~~~~~~~~~~~~~
