@@ -1,7 +1,7 @@
 Lab 2 – Discover the OWASP Dashboard
 --------------------------------------------------------
 
-Use the Guided Configuration to build a WAF policy.
+Discover and learn to operate the Dashboard
 
 Task – Open the OWASP Compliance Dashboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -10,23 +10,32 @@ Task – Open the OWASP Compliance Dashboard
 
 #. Click on the expand arrow next to A1 Injection.  This will display the attack signature types and required protections you need to secure yourself against this risk.
 
-.. image:: /_static/class9/webappbutton.png
-  :width: 600 px
+    .. image:: /_static/class9/a1initialreview.png
 
-  .. Note:: The guided configuration we used to deploy our policy builds in a staging mode.  So the attack signatures we want are applied to the policy, but will not be set to to blocking for 7 days (default setting)
+#. On that same screen in the OWASP Dashboard, hover your pointer over SQL-Injection and select the check mark.  Also hover over Server Sode Code Injection and select the checkmark.  These checkmarks enforce the requiremnts to the policy.  Notice your potential A1 Injection protection % increased.
 
+    ..Note::  In the dashboard, if you see the checkmark available, it will enforce will enforce
 
+    .. image:: /_static/class9/a1addsignatures.png
 
-.. image:: /_static/class9/webappbutton.png
-  :width: 600 px
+#. Press the blue **Review & Update** button below.  On the pop up window press the blue **Save & Apply Policy** button.  
 
-#. Click on the **Web Application Protection** template button.
+    .. Note:: While all attack signatures in this policy are in staging, we just used the OWASP dashboard to bypass the staging for those 2 catagories.  This would be a typical approach to secure an application immediatly against a certain catagory of injection signatures.  These signatures are now blocked, while staging (learning and alarming) the rest of the signatures.  
 
-.. image:: /_static/class9/webapptemplate.png
-  :width: 600 px
+#. Now for the sake of running a learning lab in a reasonable amount of time.  We will turn off signature staging.  This will replicate a user waiting out the defauly 7 days of staging your attack signatures.
 
-#. The guided configuration now gives you a configuration example of the tempalte style you are looking to deploy and a list of the objects it will guide you throuhgh the creation of.  Click the  **Next** button.
+    - Go to **Security -> Application Security -> Policy Building -> Learning and Blocking Settings**
+    - Expand **Attack Signatures**
+    - Uncheck the box next to **Enable Signature Staging**
+    - Press **Save** at the bottom of that screen
+    - Press **Apply Policy** button at the top right corner of your screen
 
-#. Give your configuration the name ``juice_shop_waf`` this will also name your security policy.
+    .. image:: /_static/class9/disablestaging.png
 
-#. Click on **Show Advanced Settings** button in the upper right hand corner of your page.
+#. Go back to your OWASP Dashboard **Security > Overview > OWASP Complaince**.  Select your policy ``juice_shop_waf``..  You can now see a lot more OWASP protections now.
+
+    .. image:: /_static/class9/dbwithblocking.png
+
+    .. Note:: When we disabled the staging, we represented a user waiting out the enforcement readiness period.  We basically just time traveled to the future!!  https://youtu.be/8qrriKcwvlY
+
+#. Congratulations!  Your business now has a protected app, and you have visibility into how well you are protected against the OWASP Top 10.  In the following labs we will work to get you to full protection.  
