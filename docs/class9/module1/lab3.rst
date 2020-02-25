@@ -1,16 +1,22 @@
 Lab 3 – Continue to add protections using the OWASP Dashboard
 ---------------------------------------------------------------
+Objective
+~~~~~~~~~~~~~~~~
 
+- Continue to apply protections to your security policy
 
-Task – We will continue applying negative securty protections for the OWASP Top 10
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Create a specific login page to protect
 
-#. On the Main tab, click **Security > Overview > OWASP Complaince**. Click on the expand arrow next to A1 Injection.  You can see the missing piece is for 100% Injwection protection is applying **Evasion Techniques**.  
+- Continie throught the rest of the dashbard to apply more protections and document other best practices in your policy
 
+Task – We will continue applying protections while working down the Dashboard
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. On the Main tab, click **Security > Overview > OWASP Compliance**. Click on the expand arrow next to A1 Injection.  You can see the missing piece is for 100% Injwection protection is applying **Evasion Techniques**.  
 
 #. At this point clicking on the checkmark and applying would move these into a blocking mode.  You are welcome to do this, but let's see how this dashboard interects with your policy.  Perform the following steps to apply in the policy.
 
-    - Go to **Security -> Application Security -> Policy Building -> Learning and Blcoking Settings**
+    - Go to **Security -> Application Security -> Policy Building -> Learning and Blocking Settings**
     - Click and expand the section titled **Evasion Technique detected** 
     - Click the checkbox for **Enable** all
     - Press **Save** at the bottom of that screen
@@ -18,7 +24,7 @@ Task – We will continue applying negative securty protections for the OWASP To
 
     .. image:: /_static/class9/evasiontechniques.png
 
-#. Go back to the Dashboard.  Click **Security > Overview > OWASP Complaince**.  You now see you are 100% protected against A1 Injection.  Now expand **A2 Broken Authentication**.  You can see with some of the default protections, and the previous attack signatures we applied are providing some protections.  The signatures we applied previously protect against some auth attacks and cookie tampering protection is on by default when applying a base policy.
+#. Go back to the Dashboard.  Click **Security > Overview > OWASP Compliance**.  You now see you are 100% protected against A1 Injection.  Now expand **A2 Broken Authentication**.  You can see with some of the default protections, and the previous attack signatures we applied are providing some protections.  The signatures we applied previously protect against some auth attacks, and cookie tampering protection is on by default when applying a base policy.
 
     - To the right of **Session Highjacking Protection** cick on **Enforce** checkmark.  You will now see the potential protections increase  Press the blue **Review & Update** button below.  Then the  **Save & Apply Policy** button.
 
@@ -26,7 +32,7 @@ Task – We will continue applying negative securty protections for the OWASP To
 
 #. The following steps will decalre our login page for the Juice Shop app, then we will apply more A2 Broken Authenticaton protections against it.
 
-    - Under A2 click the link named **Not Fulfilled** next to Login Enforcement.  This is just a link to the login page settings.  
+    - Under A2 click the link named **Not Fulfilled** next to Login Enforcement.  This is just a link/shortcut to the login page settings.  
 
         .. image:: /_static/class9/loginenforcement.png
 
@@ -38,6 +44,9 @@ Task – We will continue applying negative securty protections for the OWASP To
     - Type ``Invalid`` in the **A string that should NOT appear in the response** field
 
         .. image:: /_static/class9/loginform.png
+
+    .. Note:: You can identify the strings and parameters I listed above by either getting info from the app developers or by using tools built into your own browser.  Here is a method from one of our F5 videos.  This link brings you right to that discovery method https://youtu.be/sk6wv4XxXSE?t=165
+
     - Click **Save** and **Apply** the policy.  
 
 #. Now we will apply brute force protection to the login page we created
@@ -45,20 +54,36 @@ Task – We will continue applying negative securty protections for the OWASP To
     - Go to **Security -> Application Security -> Brute Force Attack Prevention**
     - Click **Create** in the top right corner
     - On **Login Page** select the login page we just created ``/#/login``
-    - Here you can view the mitigatons and thresholds for Brute Force Protection.  Leave the seetings as is, and press the **Create** button below.
+    - Here you can view the mitigatons and thresholds for Brute Force Protection.  For the lab, we will leave the settings as is, and press the **Create** button below.
+    - Press thee **Apply Policy** buttopn in the top right corner.
     - You can close that tab and now go back to your other OWASP tab and refresh the page.
 
-#. Back on the OWASP Dashboard, path **Security -> Overview -> OWASP Complaince**. Click on the expand arrow next to **A3 Sensitive Data Exposure**.  Previous protections we put in place satified a lot.  Applying DataGuard will inspect outbound traffic for any sensative information being sent from yuor application.  The power of our full proxy archetecture makes this protection possible.
+#. Back on the OWASP Dashboard, path **Security -> Overview -> OWASP Compliance**. Click on the expand arrow next to **A3 Sensitive Data Exposure**.  Previous protections we put in place satified a lot.  Applying DataGuard will inspect outbound traffic for any sensative information being sent from yuor application.  The power of our full proxy archetecture makes this protection possible.
 
-    - To the right of **DataGuard** click on **Enforce** checkmark.  You will now see the potential protections increase to 100%.  Press the blue **Review & Update** button below.  Then the  **Save & Apply Policy** button.
+    - To the right of **DataGuard** click on the **Enforce** checkmark.  You will now see the potential protections increase to 100%.  Press the blue **Review & Update** button below.  Then the  **Save & Apply Policy** button.
 
-    .. Note:: The default setting of Data Guard will prevent the transmission of number sequences matching credit card and social security number sequences.  Th8is can be a lot more customizable, but is out of scope for this level of class.  To see these settings go to menu **Security -> Application Security -> Data Guard**
+    .. Note:: The default setting of Data Guard will prevent the transmission of number sequences matching credit card and social security number sequences.  This can be a lot more customizable, but is out of scope for this level of class.  To see these settings though, go to menu **Security -> Application Security -> Data Guard**
 
-#. Back on the OWASP Dashboard, path **Security -> Overview -> OWASP Complaince**. Click on the expand arrow next to **A4  XML External Entities**.  Previous signature protections already are helping to mitigate these XML exploits.  Here are the steps to apply the DTDs 
+#. Back on the OWASP Dashboard, path **Security -> Overview -> OWASP Compliance**. At this time we are going to skip a few of the next controls, as their configuration is a little more advanced.  Click on the expand arrow next to **A6 Security Misconfiguration**.
 
-    - Navigate to **Security > Application Security > Content Profiles > XML Profiles**.
-    - Click the name of the default XML profile.
-    - Under Profile Properties, click the XML Firewall Configuration tab.
-    - On the Defense Configuration list, click Advanced.
-    - Clear the Allow DTDs check box.
-    - Click Update and Apply Policy.
+    .. Note:: The catagories A6, A9, and the 10th (notice how we refuse to write that one out) cover practices that use methods outside of our WAF to protect against.  What the Dashboard does here is provide you a per policy checklist to document you went through the process of protecting and running best practice to avoid these commoml application risks. 
+
+    - In the A6 list, these may be processes you currently run, or it can be left as a reminder that you are not currently applying these best practices, and eventually these are tools or processes you will need.  Click the **?** next to each best practice to see a longer description.
+    - Click on the **checkmark** for all processes that your organization is doing.  You can also click the **No/Ghostbuster** symbol here if there are internal reasons you are not doing one of these processes.  
+    - Below is an example, but you may complete this any way you choose.
+
+        .. image:: /_static/class9/securitymisconfig.png
+
+        .. Note:: In this example, we marked we are doing app scanning and vulnerability scanning.  I chose to ignore the app and system patching (An example why would be a legacy system or app that no longer recieves patching).  So it doesn't count against me but still lets me know it is not fullfilled.  And App Systrem hardening we are not doing, but I do not want credit as that is maybe something my org eventually starts doing.  
+
+#. On the OWASP Dashboard, path **Security -> Overview -> OWASP Compliance**. Click on the expand arrow next to **A8 Insecure Deserialization**.  You can see we are already at 100% coverage for this risk.  Previously applied signatures that covered other risks are also protecting us here.  You can click around in this area to see more info on the risks and each signature set.  
+
+#. On the OWASP Dashboard, path **Security -> Overview -> OWASP Compliance**. Click on the expand arrow next to **A9 Using Components with Known Vulnerabilities**.  While the risk is different than A6, the best practices that best mitigate this risk are the same.  This can give more validity to start applying these practice in your process.
+
+#. On the OWASP Dashboard, path **Security -> Overview -> OWASP Compliance**. Click on the expand arrow next to the 10th risk **Insufficient Logging & Monitoring**.  This will be another manual risk protection.  Since logging profiles are added in the virtual server confiuration the dashboard cannot read if there is logging in the WAF policy.  The good news is in we already did this work.  If you remember we added a logging profile right after we built our initial configuration using the guided configuration.  
+
+    - Click on the **Checkmark** next to **Log Illegal Requests**.  Since we already added this type of logging to our virtual server.  
+    - We do not and never will have a remote logging server or SIEM in this environemnt, so I will choose to ignore it by clicking our **No/Ghostbuster Symbol**
+    - Click **Review & Update** button below and then **Save & Apply**.
+
+# Way to go!  You now have a WAF policy that is protecting against a large part of the OWASP Top 10.
