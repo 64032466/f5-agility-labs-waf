@@ -74,7 +74,7 @@ Task – We will continue applying protections while working down the Dashboard
 
         .. image:: /_static/class9/securitymisconfig.png
 
-        .. Note:: In this example, we marked we are doing app scanning and vulnerability scanning.  I chose to ignore the app and system patching (An example why would be a legacy system or app that no longer recieves patching).  In this instance, we want to ignore that requirement as it is not applicable to the application. In this example, App Systrem hardening is something we have not implemented but are planning to, so we will leave this unsatisfied until that is complete. 
+        .. Note:: In this example, we have marked that we are performing application and vulnerability scanning.  We have chosen to ignore the app and system patching (An example why would be a legacy system or app that no longer recieves patching).  In this instance, we want to ignore that requirement as it is not applicable to the application. In our example, App System hardening is a practice that we have not yet implemented, so we will leave this unsatisfied until that is complete. 
 
 #. On the OWASP Dashboard, path **Security -> Overview -> OWASP Compliance**. Click on the expand arrow next to **A8 Insecure Deserialization**.  You can see we are already at 100% coverage for this risk.  Previously applied signatures that covered other risks are also protecting us here.  You can click around in this area to see more info on the risks and each signature set.  
 
@@ -86,4 +86,4 @@ Task – We will continue applying protections while working down the Dashboard
     - We do not and never will have a remote logging server or SIEM in this environemnt, so I will choose to ignore it by clicking our **No/Ghostbuster Symbol**
     - Click **Review & Update** button below and then **Save & Apply**.
 
-# Way to go!  You now have a WAF policy that is protecting against a large part of the OWASP Top 10.
+# Way to go!  You now have a WAF policy that is protecting against a significant portion of the OWASP Top 10.

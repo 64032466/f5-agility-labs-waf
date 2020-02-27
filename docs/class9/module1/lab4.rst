@@ -60,4 +60,4 @@ Apply additional protections against the OWASP Top 10
     - If you want to view the dshboard again you will see the A7 catagory is now at 100%.
 
 #. Now for our last step, once again go back to the OWASP Dashboard, path **Security -> Overview -> OWASP Compliance**.
-You should now be 100% compliant in all categories.  While it is nice to see completetion, the goal of the dashboard is not always to immediately reach 100% in all catagories.  The value is providing visibility into the security controls we are applying for our applications. 
+You should now be 100% compliant in all categories.  While it is nice to see completion, the goal of the dashboard may not always be to immediately reach 100% in all categories.  The true value is providing visibility and measuring the security controls we are applying to our applications. 
