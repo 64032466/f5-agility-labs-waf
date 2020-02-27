@@ -8,10 +8,10 @@ This class covers the following topics:
 - Introduction to the OWASP Top 10.
 - Hacking the Juice Shop web application.
 - Leverage F5 WAF Tester to assess vulnerabilities in the Juice Shop.
-- Rapidly create a BIG-IP Advanced WAF Policy using the Secure Guided Configuration wizard to protect the Juice Shop app.
-- Explore the BIG-IP OWASP compliance dashboard to measure your policies effectiveness.
-- Use the OWASP Dashboard to refine the WAF policy in order to mitigate the OWASP Top 10.
-- Re-evaluate the Juice Shop application with WAF protection in place.
+- Rapidly create a BIG-IP Advanced WAF Policy using the Secure Guided Configuration.
+- Explore the BIG-IP OWASP compliance dashboard to measure your policys effectiveness.
+- Use the OWASP Dashboard to refine your WAF policy in order to mitigate the OWASP Top 10.
+- Re-evaluate the Juice Shop application.
 
 Expected time to complete: **2 hours**
 
