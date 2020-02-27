@@ -16,7 +16,7 @@ Apply additional protections against the OWASP Top 10
 
         .. image:: /_static/class9/loginenforcement.png
 
-    - In the Authenticated URLs field enter ``/#/privacy-security/`` and press ther add button and ``/#/wallet`` and press the add button.  Based on app exploration we were able to see these are resources we should only be able to get to if we have authenticated.
+    - In the Authenticated URLs field enter ``/#/privacy-security/`` and press the add button and ``/#/wallet`` and press the add button.  Based on app exploration we can identify that these URIs should only be accessible after successful login.
     - Press the **Save** button below.  Then press the **Apply Policy** Button in the top right corner. 
     - Now press the link in the note message below titled **Learning and Blocking Settings Screen**
 
@@ -60,4 +60,4 @@ Apply additional protections against the OWASP Top 10
     - If you want to view the dshboard again you will see the A7 catagory is now at 100%.
 
 #. Now for our last step, once again go back to the OWASP Dashboard, path **Security -> Overview -> OWASP Compliance**.
-As you can see we are now 100% compliant in multiple catagories.  While it is nice to see completetion, the goal of the lab and the dashboard is not to reach 100% in all catagories.  It is give visibility that the security protections we are applying are actually protectiing against known risks.  It also helps to guide and document the process done on each security policy you build.
+You should now be 100% compliant in all categories.  While it is nice to see completetion, the goal of the dashboard is not always to immediately reach 100% in all catagories.  The value is providing visibility into the security controls we are applying for our applications. 
