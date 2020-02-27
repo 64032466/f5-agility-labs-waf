@@ -22,7 +22,7 @@ Create security policy using the Guided Configuration
 
     .. image:: /_static/class9/webapptemplate.png
 
-#. The guided configuration now gives you a configuration example of the template style you are looking to deploy and a list of the objects it will guide you through the creation of.  Click the  **Next** button.
+#. The guided configuration now provides an overview of what will be configured. Click the  **Next** button.
 
 #. Give your configuration the name ``juice_shop_waf`` this will also name your security policy.
 
@@ -47,11 +47,11 @@ Create security policy using the Guided Configuration
 
     .. Note:: We are adding these technologies since we know what the application is using.  There is also a feature that can be turned on that can allow the policy to learn these technologies.
 
-#. On the next place a check next to **Assign Policy to Virtual Server**, under **Virtual Server** choose **Use Existing**, and move the Juice_Shop_VS to the selected window.  Press **Save & Next**
+#. Check off **Assign Policy to Virtual Server**, under **Virtual Server** choose **Use Existing**, and move the Juice_Shop_VS to the selected window.  Press **Save & Next**
 
     .. image:: /_static/class9/addvs.png
 
-#. The next page will summarize the objects and policy configuration.  Review, and take notice that you can also go back and edit.  When done click **Deploy** at the bottom of the screen.  It will take a few moments to complete the policy build.
+#. The next page will summarize the objects and policy configuration.  Review, and take note that you can also go back and edit if required.  When done click **Deploy** at the bottom of the screen.  It will take a few moments to complete the policy build.
 
 #.  After the policy is created, we will want to go into our virtual server settings for ``Juice_Shop_VS`` to make sure we have a log profile enbaled and selected.
 

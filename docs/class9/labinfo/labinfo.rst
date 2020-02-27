@@ -8,10 +8,11 @@ Environment
 
 **External Jump Server**
 
-Website Attack Tools:
+Assessment Tools:
 
 * `nikto <https://github.com/sullo/nikto>`_ - Nikto web server scanner
 * `nmap/nping <https://nmap.org/>`_ - Network mapper
+* `F5 WAF Tester <https://github.com/f5devcentral/f5-waf-tester>`_ - Vulnerability assessment
 
 **Internal LAMP Server**
 

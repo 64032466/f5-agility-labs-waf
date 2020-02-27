@@ -20,15 +20,15 @@ Discover and learn to operate the Dashboard
 
 #. On that same screen in the OWASP Dashboard, hover your pointer over **SQL-Injection** and select the **checkmark**.  Also hover over **Server Side Code Injection** and select the **checkmark**.  These checkmarks apply the protections to the policy.  Notice your potential A1 Injection protection % increased.
 
-    .. Note::  In the dashboard, if you see the checkmark available, it will enforce will enforce
+    .. Note::  In the dashboard, if you see the checkmark available, it will enforce any protections required to be compliant for that vector.
 
     .. image:: /_static/class9/a1addsignatures.png
 
 #. Press the blue **Review & Update** button below.  On the pop up window press the blue **Save & Apply Policy** button.  
 
-    .. Note:: While all attack signatures in this policy are in staging, we just used the OWASP dashboard to bypass the staging for those 2 catagories.  This would be a typical approach to secure an application immediatly against a certain catagory of injection signatures.  These signatures are now blocked, while staging (learning and alarming) the rest of the signatures.  
+    .. Note:: While all attack signatures in this policy are in staging, we just used the OWASP dashboard to directly enforce (skip staging) for those 2 catagories.  This would be a typical approach to secure an application immediatly against a certain catagory of injection attacks.  These attack types are now blocked, while staging (learning and alarming) the rest of the attack categories.  
 
-#. Now for the sake of running a learning lab in a reasonable amount of time.  We will turn off signature staging.  This will replicate a user waiting out the default 7 days of staging your attack signatures.
+#. Now for the sake of expediting the policy blocking malicious traffic, we will turn off signature staging. This will simulate a user waiting out the default 7 days of staging your attack signatures.
 
 
     - Go to **Security -> Application Security -> Security Policies** And select your policy by name
@@ -39,6 +39,8 @@ Discover and learn to operate the Dashboard
     - Press **Save** at the bottom of that screen
     - Press **Apply Policy** button at the top right corner of your screen
 
+    .. Note:: For those of you looking for the attack signature list, you may have now noticed the location of attack signatures has changed in the most recent release. 
+
     .. image:: /_static/class9/disablestaging.png
 
 #. Go back to your OWASP Dashboard **Security -> Overview -> OWASP Compliance**.  Select your policy ``juice_shop_waf``..  You can now see a lot more OWASP protections now.
@@ -47,4 +49,4 @@ Discover and learn to operate the Dashboard
 
     .. Note:: When we disabled the staging, we represented a user waiting out the enforcement readiness period.  We basically just time traveled to the future!!  https://youtu.be/8qrriKcwvlY
 
-#. Congratulations!  Your business now has a protected app, and you have visibility into how well you are protected against the OWASP Top 10.  In the following labs we will work to get you even nore risk protection.  
+#. Congratulations!  You now have a protected app, and you have visibility into how well you are protected against the OWASP Top 10.  In the following labs we will work to get you even more protection against the OWASP Top 10.
