@@ -21,10 +21,9 @@ Docker Containers:
 
 F5 BIG-IP Details
 
-* version 15.1
-* Best Bundle (LTM, AFM, APM, ASM)
+* Version 15.1
+* Best Bundle (LTM, AFM, APM, ASM, DNS)
 * Advanced WAF add-on
-* IP Intelligence
 
 Lab Topology
 ------------
