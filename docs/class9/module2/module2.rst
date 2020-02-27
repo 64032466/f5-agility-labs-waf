@@ -1,4 +1,4 @@
-Module – Mitigate OWASP Top 10 Attacks with BIG-IP Advanced WAF
+Module 3 – Mitigate OWASP Top 10 Attacks with BIG-IP Advanced WAF
 ===============================================================
 
 description here
