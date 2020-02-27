@@ -1,13 +1,13 @@
-Lab 4 – Advanced configuration protections using the OWASP Dashboard
+Lab 4 – Advanced configuration using the OWASP Dashboard
 ---------------------------------------------------------------------
 Objective
 ~~~~~~~~~~~
 
-- Apply some final configurations to protect against the OWASP Top 10
+- Apply some final configurations to protect against the remaining OWASP Top 10
 
 - Do a final review of the OWASP Compliance Dashboard
 
-Build additional configuration protections against the OWASP Top 10
+Apply additional protections against the OWASP Top 10
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. On the OWASP Dashboard, path **Security -> Overview -> OWASP Compliance**. Click on the expand arrow next to **A2 Broken Authentication**. We still have no Login Enforcement resources.  Again you can click on the **?** to see more info on Login Enforcement or any other protections.  
