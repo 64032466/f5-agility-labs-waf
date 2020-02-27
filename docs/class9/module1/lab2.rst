@@ -30,9 +30,6 @@ Discover and learn to operate the Dashboard
 
 #. Now for the sake of expediting the policy blocking malicious traffic, we will turn off signature staging. This will simulate a user waiting out the default 7 days of staging your attack signatures.
 
-
-    - Go to **Security -> Application Security -> Security Policies** And select your policy by name
-    - Under the Enforcement Readiness Period change that to zero and press **Save**
     - Go to **Security -> Application Security -> Policy Building -> Learning and Blocking Settings**
     - Expand **Attack Signatures**
     - Uncheck the box next to **Enable Signature Staging**
@@ -50,3 +47,5 @@ Discover and learn to operate the Dashboard
     .. Note:: When we disabled the staging, we represented a user waiting out the enforcement readiness period.  We basically just time traveled to the future!!  https://youtu.be/8qrriKcwvlY
 
 #. Congratulations!  You now have a protected app, and you have visibility into how well you are protected against the OWASP Top 10.  In the following labs we will work to get you even more protection against the OWASP Top 10.
+
+    .. Note:: While we are of course working toward the goal of applying more security.  The end result of the dashboard is to not always be 100% in all catagories.  It is to ensure the protections you are adding are actually protecting against common risks.  It also serves as a guide and documentation of the progress you make with each security policy.  

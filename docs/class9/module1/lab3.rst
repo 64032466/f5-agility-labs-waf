@@ -55,8 +55,10 @@ Task – We will continue applying protections while working down the Dashboard
     - Click **Create** in the top right corner
     - On **Login Page** select the login page we just created ``/#/login``
     - Here you can view the mitigatons and thresholds for Brute Force Protection.  For the lab, we will leave the settings at their defaults, and press the **Create** button below.
-    - Press the **Apply Policy** buttopn in the top right corner.
+    - Press the **Apply Policy** button in the top right corner.
     - You can close that tab and now go back to your other OWASP tab and refresh the page.
+
+    .. Note:: Notice we are not at 100% completion for A2 risks.  We will return to this in the next section as the configurations are a little more advanced.  
 
 #. Back on the OWASP Dashboard, path **Security -> Overview -> OWASP Compliance**. Click on the expand arrow next to **A3 Sensitive Data Exposure** and notice that previous protections we put in place satified many of the requirements.  Applying DataGuard will inspect outbound traffic for any sensitive information being sent from your application.  The power of our full proxy archetecture makes this protection possible.
 
@@ -86,4 +88,4 @@ Task – We will continue applying protections while working down the Dashboard
     - We do not and never will have a remote logging server or SIEM in this environemnt, so I will choose to ignore it by clicking our **No/Ghostbuster Symbol**
     - Click **Review & Update** button below and then **Save & Apply**.
 
-# Way to go!  You now have a WAF policy that is protecting against a significant portion of the OWASP Top 10.
+#. Way to go!  You now have a WAF policy that is protecting against a significant portion of the OWASP Top 10.

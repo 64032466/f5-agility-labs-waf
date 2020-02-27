@@ -3,6 +3,8 @@ Lab 1 - Use the Secure Guided Configuration to Build a WAF Policy
 Objective
 ~~~~~~~~~~~~~~~~
 
+- Log into the BIG-IP
+
 - Create a blocking policy using the guided configuration utiliy
 
 - Apply the security policy to an existing virtual server
@@ -12,7 +14,13 @@ Objective
 Create security policy using the Guided Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. On the Main tab, click **Security > Guided Configuration**. This opens the Guided Configuration screen
+#. On your UDF page, go to your BIG-IP component, click the **Access** drop down menu and choose **TMUI** (traffic management user interface).  This is a link to your configuration utility.  
+
+    .. image:: /_static/class9/bigiplogin.png
+
+#. Login to the BIG-IP with the ever so secure credentails of Username  ``admin`` and Password ``admin``.  
+
+#. On the Main tab to your left, select **Security > Guided Configuration**. This opens the Guided Configuration screen.
 
 #. Click on the **Polices List**
 
@@ -53,14 +61,18 @@ Create security policy using the Guided Configuration
 
 #. The next page will summarize the objects and policy configuration.  Review, and take note that you can also go back and edit if required.  When done click **Deploy** at the bottom of the screen.  It will take a few moments to complete the policy build.
 
-#.  After the policy is created, we will want to go into our virtual server settings for ``Juice_Shop_VS`` to make sure we have a log profile enbaled and selected.
+#.  After the policy is created, we will want to apply a logging profile to our new security policy.
 
-    - Go to **Local Traffic -> Virtual Servers**, and select our Juice Shop virtual server.
-    - From the top select the tab **Security** and select the **Policies** dropdown.
-    - Under **Log Profile** select **Enabled..** and choose **Log illegal requests**.
+    - Go to **Securirty -> Overview -> Summary**, and the policy you just created should be listed. 
+    - Place a check to the left of the **Virtual Server** name that your new ecurity policy is applied to.  
+    - Now click the blue **Attach** button above and select **Logging Profile**
 
-    .. image:: /_static/class9/enablelogging.png
+        .. image:: /_static/class9/attachlogging1.png
 
-    .. Note:: Also take note that that this is where the security poilicy we just created is applied to your virtual server.  You can see under **Application Security Policy** it is now enabled with your new policy.
-    
-#.  You now have an active application security policy that is learning and staging protections against the Juice_Shop virtual server.  
+    - Select **Log illegal requests** and press the other **Attach** button below.
+
+        .. image:: /_static/class9/attachlogging2.png
+
+    - You will now see the logging profile is added under the Application Security column.  
+
+#.  You now have an active application security policy that is learning, staging, and logging protections against the ``Juice_Shop`` virtual server.  
