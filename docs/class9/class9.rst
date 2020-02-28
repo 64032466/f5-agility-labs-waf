@@ -1,7 +1,7 @@
 Class 9: WAF 111 - Protecting Yourself Against the OWASP Top 10
 ===============================================================
 
-The OWASP Top 10 is the de facto list of the top 10 most prevalent web application attacks. A challenge for many security practitioners is taking such a list of high-level attacks and turning those into real, actionable protection for our applications. In this session we will demonstrate how we can quickly protect against the OWASP Top 10 by leveraging solutions across the F5 technology portfolio including BIG-IP Advanced WAF, NGINX WAF and F5 Rules for AWS WAF.
+The OWASP Top 10 is the de facto list of the top 10 most prevalent web application attacks. A challenge for many security practitioners is taking such a list of high-level attacks and turning those into real, actionable protection for our applications. In this session we will demonstrate how we can quickly protect against the OWASP Top 10 by leveraging F5's BIG-IP Advanced WAF module.
 
 This class covers the following topics:
 
