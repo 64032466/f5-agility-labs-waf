@@ -22,8 +22,10 @@ A new browser tab should pop open and the Juice Shop should load
 
     .. image:: /_static/class9/udf_juice_shop.png
 
+
 Task – Create an Account on the Juice Shop Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 You will notice that as you click on each product you can't add the product to a basket. You will need to create an account to add products to the basket and make a purchase. Click on the ``Account`` link and the ``Login`` in the top right of the page.
 
     .. image:: /_static/class9/udf_juice_shop_account.png
@@ -34,4 +36,29 @@ Then click on the ``Not yet a customer`` link
 
 Complete the registration and log in with your new username and password.
 
+
+Task – Make a Purchase
+~~~~~~~~~~~~~~~~~~~~~~
+
+Click on any product and add it to you basket then click on ``Your Basket`` in the top right of the page.
+
+    .. image:: /_static/class9/juice_shop_basket.png
+
+Click ``Checkout`` and create a new shipping address
+
+Select the new address and click the ``Continue`` button.
+
+    .. image:: /_static/class9/juice_shop_address.png
+
+Choose any of the delivery options and click the ``Continue`` button.
+
+    .. image:: /_static/class9/juice_shop_delivery.png
+
+Add a new credit card (use ``1111111111111111`` for the credit card number), select it and click the ``Continue`` button.
+
+    .. image:: /_static/class9/juice_shop_cc.png
+
+Then click ``Place your order and pay``
+
+    .. image:: /_static/class9/juice_shop_pay.png
 

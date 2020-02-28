@@ -11,8 +11,7 @@ Environment
 Assessment Tools:
 
 * `nikto <https://github.com/sullo/nikto>`_ - Nikto web server scanner
-* `nmap/nping <https://nmap.org/>`_ - Network mapper
-* `F5 WAF Tester <https://github.com/f5devcentral/f5-waf-tester>`_ - WAF assessment
+* `F5 WAF Tester <https://github.com/f5devcentral/f5-waf-tester>`_ - WAF assessment tool
 
 **Internal LAMP Server**
 
@@ -20,7 +19,7 @@ Docker Containers:
 
 * Juice Shop - Extremely Vulnerable Web Application
 
-F5 BIG-IP Details
+**F5 BIG-IP**
 
 * Version 15.1
 * Best Bundle (LTM, AFM, APM, ASM, DNS)
@@ -33,8 +32,13 @@ The network topology implemented for this lab is very simple. The following
 components have been included in your lab environment:
 
 -  1 x F5 BIG-IP VE (v15.1) licenced with Best Bundle and Advanced WAF upgrade
+    - external interface (external subnet)
+    - management interface (management subnet)
+    - internal interface (internal subnet)
 -  1 x Ubuntu Linux 18.04 External Jump Server
+    - interface coonected to external subnet
 -  1 x Ubuntu Linux 18.04 Internal LAMP Server
+    - interface coonected to internal subnet
 
 A network diagram of the lab:
 
