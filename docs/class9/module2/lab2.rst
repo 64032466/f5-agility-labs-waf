@@ -10,11 +10,18 @@ Objective
 Task - Initialize the F5 WAF Tester Tool
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Initialize the tool
+Either SSH into the External Jump Server or use the Web Shell. If using the Web Shell change from the root user to the ubuntu user
+
+``su - ubuntu``
+
+Iinitialize the WAF Tester Tool by running the following command:
+
+``f5-waf-tester --init``
+
+The output from running the command above will look like the following:
 
 ::
 
-   f5-waf-tester --init
    [BIG-IP] Host []: 10.1.1.4
    [BIG-IP] Username []: admin
    [BIG-IP] Password []:
@@ -29,14 +36,17 @@ Initialize the tool
    [Filters] Test Systems to exclude (Separated by ',') []:
    [Filters] Test Attack Types to exclude (Separated by ',') []:
 
-Edit the config if required. Much easier than re-running the init if you
-made a mistake.
+Edit the configuration if required. It is much easier to edit the config file than re-running the --init if you made a mistake.
 
 ::
 
    vi ~/.local/lib/python2.7/site-packages/f5_waf_tester/config/config.json
 
-After initialization it looks like this
+Or if you prefer not to type all that out there is a bash alias
+
+``waf_config``
+
+After initialization the configuration file should look like this:
 
 ::
 
@@ -68,7 +78,7 @@ After initialization it looks like this
 Task - Use the F5 WAF Tester Tool
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Run the tool
+Run the tool as follows. The name of the report file can be anything you want to name it. There is no requirement to name it ``f5_waf_tester_report_1.json``
 
 ::
 
