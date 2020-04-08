@@ -22,8 +22,6 @@ Create security policy using the Guided Configuration
 
 #. On the Main tab to your left, select **Security > Guided Configuration**. This opens the Guided Configuration screen.
 
-#. Click on the **Polices List**
-
     .. image:: /_static/class9/webappbutton.png
 
 #. Click on the **Web Application Protection** template button.

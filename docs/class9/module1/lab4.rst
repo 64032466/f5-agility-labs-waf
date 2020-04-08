@@ -16,6 +16,10 @@ Apply additional protections against the OWASP Top 10
 
         .. image:: /_static/class9/loginenforcement.png
 
+    - Then, click on the **Login Enforcement** tab
+
+        .. image:: /_static/class9/loginpageslist.png
+
     - In the Authenticated URLs field enter ``/#/privacy-security/`` and press the add button and ``/#/wallet`` and press the add button.  Based on app exploration we can identify that these URIs should only be accessible after successful login.
     - Press the **Save** button below.  Then press the **Apply Policy** Button in the top right corner. 
     - Now press the link in the note message below titled **Learning and Blocking Settings Screen**
