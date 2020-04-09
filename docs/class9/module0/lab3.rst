@@ -14,17 +14,36 @@ Objective
 
 - Demonstrate an unauthorized directory listing.
 
-Task – Demonstrate a cross site scripting (XSS) vulnerability
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Task – Demonstrate a server side cross site scripting (XSS) vulnerability
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Click on the magnifying glass in the top right of the page to expose a search field and enter the following in the field and hit enter:
+Visit the About page so you can see that it hasn't been hacked yet by clicking on the hamburger menu in the top left corner of the page:
 
-``<iframe src="javascript:alert(`pwned`)">``
+    .. image:: /_static/class9/hamburger_menu.png
 
-You should see the following page load with a popup window
+and then click on **About Us**.
 
-    .. image:: /_static/class9/juice_shop_xss.png
+    .. image:: /_static/class9/aboutus_menu.png
 
+You should see a bunch of lorem ipsum text and a slider of customer feedback entries retrieved from the database.
+
+    .. image:: /_static/class9/aboutus_page.png
+
+We will insert our cross site scripting hack into the database via the Customer Feedback form. Click on the hamburger menu again and then click on **Customer Feedback**.
+
+    .. image:: /_static/class9/customer_feedback.png
+
+In the comment area paste the following:
+
+.. code-block:: none
+
+    <<script>FUD</script>iframe allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/771984076&auto_play=true>
+
+Then, choose any amount of stars for the rating and answer the math challenge and then click Submit.
+
+    .. image:: /_static/class9/xss_cust_feedback_form.png
+
+Now head back over to the About page by clicking on the hamburger menu and then clicking on About. You should hear a jingle about the Juice Shop.
 
 Task – Demonstrate a SQL injection vulnerability
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
