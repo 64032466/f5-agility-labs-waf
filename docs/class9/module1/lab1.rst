@@ -42,10 +42,13 @@ Create security policy using the Guided Configuration
 
 #. Under **Server Technologies** add the following to the selected window.  Adding these technologies will assist in building a more precise policy.
 
+    - AngularJS
     - Express.js
     - JavaScript
     - JQuery
+    - MongoDB
     - Node.js
+    - SQLite
 
 #. Press the **Save & Next** Button below.  
 
