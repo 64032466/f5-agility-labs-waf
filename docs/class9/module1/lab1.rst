@@ -62,17 +62,19 @@ Create security policy using the Guided Configuration
 
 #. The next page will summarize the objects and policy configuration.  Review, and take note that you can also go back and edit if required.  When done click **Deploy** at the bottom of the screen.  It will take a few moments to complete the policy build.
 
+    .. image:: /_static/class9/deploy_waf_policy.png
+
 #.  After the policy is created, we will want to apply a logging profile to our new security policy.
 
     - Go to **Securirty -> Overview -> Summary**, and the policy you just created should be listed. 
     - Place a check to the left of the **Virtual Server** name that your new ecurity policy is applied to.  
     - Now click the blue **Attach** button above and select **Logging Profile**
 
-        .. image:: /_static/class9/attachlogging1.png
+    .. image:: /_static/class9/attachlogging1.png
 
     - Select **Log illegal requests** and press the other **Attach** button below.
 
-        .. image:: /_static/class9/attachlogging2.png
+    .. image:: /_static/class9/attachlogging2.png
 
     - You will now see the logging profile is added under the Application Security column.  
 

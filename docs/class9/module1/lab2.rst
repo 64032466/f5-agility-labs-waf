@@ -14,7 +14,7 @@ Discover and learn to operate the Dashboard
 
 #. On the Main tab, click **Security -> Overview -> OWASP Compliance**. This opens the OWASP Dashboard.  Highlight your new policy ``juice_shop_waf``.  You will see that your score is 0/10 for securing against the OWASP top 10.  Though you will see partial % scores for some.
 
-#. Click on the expand arrow next to A1 Injection.  This will display the attack signature types and required protections you need to secure yourself against this risk.
+#. Click on the expand arrow next to **A1 Injection**.  This will display the attack signature types and required protections you need to secure yourself against this risk.
 
     .. image:: /_static/class9/a1initialreview.png
 
