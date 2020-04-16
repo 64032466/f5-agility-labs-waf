@@ -10,8 +10,9 @@ Environment
 
 Assessment Tools:
 
-* `nikto <https://github.com/sullo/nikto>`_ - Nikto web server scanner
-* `F5 WAF Tester <https://github.com/f5devcentral/f5-waf-tester>`_ - WAF assessment tool
+* `F5 WAF Tester <https://github.com/f5devcentral/f5-waf-tester>`_ - WAF Assessment Tool
+* `nikto <https://github.com/sullo/nikto>`_ - Nikto Web Server Scanner
+* `bonesi <https://github.com/Markus-Go/bonesi>`_ - BoNeSi DDoS Botnet Simulator
 
 **Internal LAMP Server**
 

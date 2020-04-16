@@ -1,4 +1,4 @@
-Lab 2 – Introduction to the Juice Shop
+Lab 1 – Introduction to the Juice Shop
 --------------------------------------
 
 Objective

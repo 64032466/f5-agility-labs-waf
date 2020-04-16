@@ -1,4 +1,4 @@
-Lab 3 – Hacking the Juice Shop
+Lab 2 – Hacking the Juice Shop
 ------------------------------
 
 Objective
@@ -85,3 +85,5 @@ Navigate to /ftp to expose an unwanted directory listing
 Navigate to /encryptionkeys to expose an unwanted directory listing
 
 .. image:: /_static/class9/juice_shop_encryptionkeys.png
+
+The files in this directory can be downloaded. A good WAF policy should prevent access.
